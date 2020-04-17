@@ -15,8 +15,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			<Cell>
 			{`${coins} JB`}
 			</Cell>
-		</Group>
-		<Group>
+
 			<Div>
 				<Button size="xl" level="2" onClick={coins += 1}>
 				Клик
