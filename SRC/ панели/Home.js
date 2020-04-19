@@ -7,23 +7,21 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 var coins = 0;
-var click = 0;
 
-if(click === 1) {
-        click = 0;
-        Coins += 1;
-}
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Баланс</PanelHeader>
 		<Group>
-			<Cell>
-			{`${coins} JB`}
-			</Cell>
-
 			<Div>
 				<Button size="xl" level="2" onClick={click += 0}>
 				Клик
+				</Button>
+			</Div>
+		</Group>
+                <Group title="Navigation Example">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="persik">
+					Show me the Persik, please
 				</Button>
 			</Div>
 		</Group>
